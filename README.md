@@ -18,6 +18,7 @@ This repository provides a comprehensive guide to IaC, including its role in Dev
 - [Benefits](#benefits)
 - [Challenges](#challenges)
 - [Conclusion](#conclusion)
+- [Declarative vs Imperative Approaches to Infrastructure as Code (IaC)](#declarative-vs-imperative-approaches-to-infrastructure-as-code-iac)
 
 ---
 
@@ -127,3 +128,16 @@ By adopting IaC, teams can shift from manual infrastructure provisioning to auto
 
 ---
 
+## Declarative vs Imperative Approaches to Infrastructure as Code (IaC)
+
+Here is a comparison of Declarative and Imperative IaC approaches:
+
+| **Declarative Approach** | **Imperative Approach** |
+|--------------------------|------------------------|
+| Specifies the desired state of the infrastructure, such as the resources and their configurations. | Details the exact steps or commands required to achieve the desired infrastructure state. |
+| The IaC tool determines and performs actions to achieve the desired state automatically. | Requires the user to execute commands in the correct sequence to configure the infrastructure. |
+| Tracks the current state of the infrastructure, simplifying updates and resource teardown. | Does not inherently track state; the user is responsible for managing changes manually. |
+| Simplifies the process as users define what they want, leaving how it is achieved to the tool. | Demands detailed instructions, making the user responsible for defining how to achieve results. |
+| Automatically applies changes when the desired state is modified. | The user must figure out and apply the changes manually. |
+| Commonly used by most IaC tools, as it allows for automation and efficiency. | Less common, but some tools or scenarios may require it for greater control over actions. |
+| Defining infrastructure as a code template and letting the tool provision resources. | Writing scripts to create or update infrastructure in a specific order. |
