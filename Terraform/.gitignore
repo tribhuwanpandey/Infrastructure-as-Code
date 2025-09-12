@@ -1,0 +1,3 @@
+ec2-Instance-Creation/terraform.tfstate*
+ec2-Instance-Creation/*.backup
+ec2-Instance-Creation/.terraform/
